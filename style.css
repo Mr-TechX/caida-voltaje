@@ -1,0 +1,145 @@
+/* Pantalla Moto E7 720px x 1600px */
+.cuerpo {
+  background-image: url("img/wll.png");
+  font-family:"Anton", serif;
+  font-size:30px;
+}
+
+.anton-regular {
+  font-family: "Anton", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  color:#6098FF;
+  font-family:"Anton", serif;
+  font-size:30px;
+}
+
+.wrapper {
+  margin: 400px auto;
+  text-align: center;
+  width: 100%;
+  position: relative;
+}
+
+.btn, .btn11{
+  padding: 100px 100px;
+  margin:10px 4px;
+  color: #fff;
+  font-family: "Anton", serif;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  text-decoration: none;
+  display:inline-block;
+  
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  bottom: 50%;
+  left: 0px;
+  width: 100%;
+  height: 1px;
+  background: #6098FF;
+  display: block;
+  -webkit-transform-origin: left top;
+  -ms-transform-origin: left top;
+  transform-origin: left top;
+  -webkit-transform: scale(0, 1);
+  -ms-transform: scale(0, 1);
+  transform: scale(0, 1);
+  -webkit-transition: transform 0.4s cubic-bezier(1, 0, 0, 1);
+  transition: transform 0.4s cubic-bezier(1, 0, 0, 1)
+}
+
+.btn:hover::before {
+  -webkit-transform-origin: right top;
+  -ms-transform-origin: right top;
+  transform-origin: right top;
+  -webkit-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  transform: scale(1, 1)
+}
+
+/* Btn 11  */
+.btn11{
+    top: 40px;
+    padding:135px 90px;
+    margin: 0 10px;
+    display: inline-block;
+    text-decoration:none;
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 500;
+    font-size: 27px;
+    text-transform: uppercase!important;
+    letter-spacing: 2px;
+    color: #fff;
+    cursor: hand;
+    text-align: center;
+    text-transform: capitalize;
+    border-radius:0px;
+    position: relative;
+    overflow: hidden!important;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    background: transparent!important;
+}
+
+
+.btn11:hover{
+    border: 1px solid #transparent;
+    color: #80ffd3!important;
+}
+.btn11::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: #c10daf;
+    position: absolute;  
+    left: 0%;
+    opacity: 1;
+    top: 0;
+    z-index: -12;
+    -webkit-transition: all .65s cubic-bezier(0.77, 0, 0.175, 1);
+       -moz-transition: all .65s cubic-bezier(0.77, 0, 0.175, 1);
+         -o-transition: all .65s cubic-bezier(0.77, 0, 0.175, 1);
+            transition: all .65s cubic-bezier(0.77, 0, 0.175, 1);
+  } 
+
+.btn11::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: #80ffd3;
+    position: absolute;
+    left: 0%;
+    opacity: 1;
+    top: 0;
+    z-index: -15;
+    -webkit-transition: all .65s cubic-bezier(0.77, 0, 0.175, 1);
+       -moz-transition: all .65s cubic-bezier(0.77, 0, 0.175, 1);
+         -o-transition: all .65s cubic-bezier(0.77, 0, 0.175, 1);
+            transition: all .65s cubic-bezier(0.77, 0, 0.175, 1);
+}
+.btn11:hover::before, .btn11:hover::before{
+  opacity:1;
+    -webkit-transform: translateX(100%);
+       -moz-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+            transform: translateX(100%);
+}
+.btn11:hover::after, .btn11:hover::after{
+  opacity:1;
+    -webkit-transform: translateX(-100%);
+       -moz-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+            transform: translateX(-100%);
+}

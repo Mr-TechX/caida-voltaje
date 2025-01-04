@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Calculadora de caida de voltaje basado e mentros, calibre y amperaje">
+    <meta name="author" content="TechX">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/ico" href="../img/icn.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Caida de voltaje por metro</h1>
+        <form id="cableForm">
+            <div class="form-group">
+                <label for="calibre">Calibre del cable:</label>
+                <input type="number" id="calibre" name="calibre" required>
+            </div>
+            <div class="form-group">
+                <label for="distancia">Distancia (m):</label>
+                <input type="number" id="distancia" name="distancia" required>
+            </div>
+            <div class="form-group">
+                <label for="amperaje">Amperaje (A):</label>
+                <input type="number" id="amperaje" name="amperaje" required>
+            </div>
+            <!-- <div class="form-group">
+                <label for="voltaje">Voltaje (V):</label>
+                <input type="number" id="voltaje" name="voltaje" required>
+            </div> -->
+            <button type="button" onclick="mostrarDatos()">Enviar</button>
+        </form>
+
+        <div id="output" class="output" style="display: none;"></div>
+        <button type="button" onclick="redireccionar()">Volver</button>
+        <button type="button" onclick="recargar()">Recargar</button>
+    </div>
+
+    <script src="code.js"></script>
+</body>
+</html>
