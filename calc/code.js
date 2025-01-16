@@ -4,6 +4,7 @@ function mostrarDatos() {
     // Resistencias por calibre en ohms/m
     const cal3_0 = 0.000077; 
     const cal2_0 = 0.000098;
+    const cal2 = 0.000152;
     const cal3 = 0.000197;
     const cal4 = 0.000253;
     const cal6 = 0.000395;
@@ -21,6 +22,9 @@ function mostrarDatos() {
     if(calibre == 3_0 || calibre == 3/0 || calibre == 3-0) {
         resultado = cal3_0 * distancia;
         resultado = resultado * amperaje;
+    } else if(calibre == 2) {
+         resultado = cal2 * distancia;
+         resultado = resultado * amperaje;
     } else if(calibre == 2_0 || calibre == 2/0 || calibre == 2-0) {
         resultado = cal2_0 * distancia;
         resultado = resultado * amperaje;
@@ -50,7 +54,7 @@ function mostrarDatos() {
         resultado = resultado * amperaje;
     } else {
         alert("Este calibre no esta en la base de datos por ahora");
-        alert("Los calibres disponibles son: 3_0, 2_0, 3, 4, 6, 8, 10, 12, 14 y 16");
+        alert("Los calibres disponibles son: 3_0, 2_0, 2, 3, 4, 6, 8, 10, 12, 14 y 16");
     }
 
 
